@@ -25,7 +25,7 @@ function deepestChild() {
   var selector = "#grand-node";
 
   while(deep.children.length !== 0)   {
-    deep = deep.querySelector(deep.children[0].tagName);
+    deep = deep.querySelector("div");
      selector += ` ${deep.children[0].tagName}`;
   } 
   
