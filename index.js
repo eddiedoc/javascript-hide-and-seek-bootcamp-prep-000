@@ -24,10 +24,10 @@ function deepestChild() {
   var deep = document.querySelector("#grand-node");
   var selector = "#grand-node";
 
-  do   {
+  while(deep.children.length !== 0)   {
     deep = deep.querySelector(deep.children[0].tagName);
      selector += ` ${deep.children[0].tagName}`;
-  } while(deep.children.length === 1)
+  } 
   
 return selector;  
 }
