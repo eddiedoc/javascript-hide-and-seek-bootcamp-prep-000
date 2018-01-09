@@ -29,5 +29,5 @@ function deepestChild() {
      selector += " div";
   } 
   
-return selector;  
+return document.querySelector(selector);  
 }
