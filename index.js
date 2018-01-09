@@ -26,7 +26,7 @@ function deepestChild() {
 
   while(deep.children.length !== 0)   {
     deep = deep.querySelector("div");
-     selector += ` ${deep.children[0].tagName}`;
+     selector += " div";
   } 
   
 return selector;  
